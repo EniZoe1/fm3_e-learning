@@ -24,12 +24,15 @@ body {
 	line-height: 175%;
 	cursor: pointer;
 }
+
 .nav {
-	display: grid;
-	align-items: center;
-	grid-template-columns: 1fr 1fr;
-	padding: 1.6rem;
-	margin-bottom: 2.2rem;
+	&__wrapper {
+		display: grid;
+		align-items: center;
+		grid-template-columns: 1fr 1fr;
+		padding: 1.6rem;
+		margin-bottom: 2.2rem;
+	}
 	&__logo {
 		color: var(--13183F, #13183f);
 		font-family: Plus Jakarta Sans;
@@ -53,10 +56,12 @@ header {
 }
 .main {
 	background-image: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
-	padding: 0 1.6rem;
+	&__wrapper {
+		padding: 0 1.6rem 8rem;
+	}
 	.cards {
 		display: grid;
-		grid-template: 1fr;
+		grid-template-columns: 1fr;
 		gap: 4rem;
 
 		.card {
@@ -65,9 +70,6 @@ header {
 			box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
 			width: 100%;
 			padding: 2.4rem 2.85rem;
-			&:last-child{
-				margin-bottom: 8rem;
-			}
 			&--featured {
 				padding: 2.4rem 2.85rem;
 				border-radius: 1rem;
@@ -128,6 +130,9 @@ header {
 			}
 			&__link {
 				position: relative;
+				display: inline-block;
+				margin-top: auto;
+				margin-bottom: 0.8rem;
 				color: c.$pink;
 				font-size: 1.8rem;
 				text-decoration: none;
@@ -153,35 +158,42 @@ header {
 		}
 	}
 }
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+}
 .footer {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
-	padding: 3.6rem 1.6rem;
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		padding: 3.6rem 1.6rem;
+	}
 	background-color: c.$dark-blue;
 	&__btn {
 		justify-self: right;
 		position: relative;
 		background-image: c.$gradient2;
-		&-title{
+		&-title {
 			position: relative;
 			z-index: 2;
 		}
-		&::before{
-			content: '';
+		&::before {
+			content: "";
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
 			border-radius: 2.8rem;
-			background-image: c.$gradient2-hover;
+			background-color: #fff;
+			// opacity: 0;
 			opacity: 0;
-			transition: opacity .3s;
+			transition: opacity 0.3s;
 		}
-		&:hover{
-			&::before{
-				opacity: 1;
+		&:hover {
+			&::before {
+				opacity: .5;
 			}
 		}
 	}
