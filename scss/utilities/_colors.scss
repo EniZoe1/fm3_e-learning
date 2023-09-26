@@ -1,0 +1,13 @@
+$light-blue: #666ca3;
+$dark-blue: #13183f;
+$gray: #83869a;
+$pink: #f74780;
+$light-pink: #ffa7c3;
+$white: #fff;
+// gradients
+$gradient1: linear-gradient( #ff6f48, #f02aa6);
+$gradient1-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+$gradient2: linear-gradient(#4851ff, #f02aa6);
+$gradient2-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+
+$gradient3: linear-gradient(90deg, #ff6f48, #f02aa6);

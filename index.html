@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Skilled e-learning landing page</title>
-</head>
-<body>
-
-  Get Started
-
-  Maximize skill, minimize budget
-
-  Our modern courses across a range of in-demand skills will give you the 
-  knowledge you need to live the life you want.
-
-  Get Started
-
-  Check out our most popular courses!
-
-  Animation
-  Learn the latest animation techniques to create stunning motion 
-  design and captivate your audience.
-  Get Started
-
-  Design
-  Create beautiful, usable interfaces to help shape the future of 
-  how the web looks.
-  Get Started
-
-  Photography
-  Explore critical fundamentals like lighting, composition, and focus 
-  to capture exceptional photos.
-  Get Started
-
-  Crypto
-  All you need to know to get started investing in crypto. Go from beginner 
-  to advanced with this 54 hour course.
-  Get Started
-
-  Business
-  A step-by-step playbook to help you start, scale, and sustain your business 
-  without outside investment.
-  Get Started
-
-  Get Started
-
-</body>
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Frontend Mentor | Skilled e-learning landing page</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<a href="#">
+				<img class="nav__logo" src="assets/logo-dark.svg" alt="skilled" />
+			</a>
+			<button class="btn nav__btn">Get Started</button>
+		</nav>
+		<header class="header">
+			<h1 class="header__title">Maximize skill, minimize budget</h1>
+			<p class="header__text">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+			<button class="btn header__btn">Get Started</button>
+		</header>
+		<main class="main">
+			<div class="cards">
+				<div class="card card--featured">
+					<p class="card--featured__text">Check out our most popular courses!</p>
+				</div>
+				<div class="card">
+					<h3 class="card__title card__title--first">Animation</h3>
+					<p class="card__text">Learn the latest animation techniques to create stunning motion design and captivate your audience.</p>
+					<a href="#" class="card__link">Get Started</a>
+				</div>
+				<div class="card">
+					<h3 class="card__title card__title--second two">Design</h3>
+					<p class="card__text">Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+					<a href="#" class="card__link">Get Started</a>
+				</div>
+				<div class="card">
+					<h3 class="card__title card__title--third">Photography</h3>
+					<p class="card__text">Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</p>
+					<a href="#" class="card__link">Get Started</a>
+				</div>
+				<div class="card">
+					<h3 class="card__title card__title--fourth">Crypto</h3>
+					<p class="card__text">All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</p>
+					<a href="#" class="card__link">Get Started</a>
+				</div>
+				<div class="card">
+					<h3 class="card__title card__title--fifth">Business</h3>
+					<p class="card__text">A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</p>
+					<a href="#" class="card__link">Get Started</a>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<a href="#">
+				<img src="assets/logo-light.svg" alt="skilled" />
+			</a>
+			<button class="btn footer__btn">
+				<span class="footer__btn-title">Get Started</span></button>
+		</footer>
+	</body>
 </html>
