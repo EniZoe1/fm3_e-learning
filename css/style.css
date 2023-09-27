@@ -93,12 +93,14 @@ body {
 }
 .header__title {
   margin-bottom: 2.6rem;
+  color: #13183f;
   font-size: 4rem;
   font-weight: 800;
 }
 .header__text {
   margin-bottom: 2.4rem;
   font-size: 1.6rem;
+  line-height: 175%;
   color: #83869a;
   font-weight: 500;
 }
@@ -331,6 +333,9 @@ body {
   }
 }
 @media (min-width: 1440px) {
+  .btn {
+    padding: 1.4rem 3.15rem;
+  }
   .header__wrapper {
     grid-template-columns: 45.7rem 1fr;
   }

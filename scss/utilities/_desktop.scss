@@ -1,4 +1,8 @@
 @media (min-width: 1440px) {
+	.btn {
+		padding: 1.4rem 3.15rem;
+	}
+
 	.header {
 		&__wrapper {
 			grid-template-columns: 45.7rem 1fr;
@@ -12,10 +16,10 @@
 		&__btn {
 			font-size: 1.8rem;
 		}
-		&__image-m{
+		&__image-m {
 			display: none;
 		}
-		&__image-xxl{
+		&__image-xxl {
 			position: absolute;
 			right: 0;
 			top: 50%;
