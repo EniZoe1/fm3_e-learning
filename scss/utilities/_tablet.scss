@@ -1,8 +1,24 @@
 @media (min-width: 768px) {
+	.nav{
+		padding: 2.4rem 3.95rem;
+		&__wrapper{
+			margin-bottom: 2.6rem;
+		}
+	}
 	.header {
-		grid-template-columns: 1.17fr 1fr;
+		padding: 0 3.95rem;
+		&__wrapper {
+			grid-template-columns: 1.17fr 1fr;
+		}
 		&__left {
-			margin: 0 0 0 3.95rem;
+			margin: 0;
+		}
+		&__title{
+			margin-top: 7rem;
+		}
+		&__image{
+			height: 100%;
+			background-image: url();
 		}
 	}
 	.main {
