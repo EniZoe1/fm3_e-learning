@@ -9,16 +9,33 @@
 		padding: 0 3.95rem;
 		&__wrapper {
 			grid-template-columns: 1.17fr 1fr;
+
 		}
 		&__left {
 			margin: 0;
 		}
+		&__right{
+			position: relative;
+		}
 		&__title{
 			margin-top: 7rem;
 		}
-		&__image{
-			height: 100%;
-			background-image: url();
+		&__image-xs{
+			display: none;
+		}
+		&__image-m{
+			display: block;
+			position: absolute;
+			
+			right: calc(-20% - 250px);
+			top: 50%;
+			translate: 0 -70%;
+			z-index: 4;
+			height: 125%;
+			background-position: center;
+		}
+		&__btn{
+			margin-bottom: 21rem;
 		}
 	}
 	.main {

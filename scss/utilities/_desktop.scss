@@ -1,5 +1,8 @@
 @media (min-width: 1440px) {
 	.header {
+		&__wrapper {
+			grid-template-columns: 45.7rem 1fr;
+		}
 		&__title {
 			font-size: 5.6rem;
 		}
@@ -8,6 +11,19 @@
 		}
 		&__btn {
 			font-size: 1.8rem;
+		}
+		&__image-m{
+			display: none;
+		}
+		&__image-xxl{
+			position: absolute;
+			right: 0;
+			top: 50%;
+			translate: 50% -70%;
+			z-index: 4;
+			height: 125%;
+			display: block;
+			background-position: center;
 		}
 	}
 	.main {
