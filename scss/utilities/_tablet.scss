@@ -1,4 +1,10 @@
 @media (min-width: 768px) {
+	.header {
+		grid-template-columns: 1.17fr 1fr;
+		&__left {
+			margin: 0 0 0 3.95rem;
+		}
+	}
 	.main {
 		padding: 0 3.95rem 8.6rem;
 		.cards {
